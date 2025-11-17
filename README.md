@@ -17,7 +17,7 @@ This repo:
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/<YOUR_GITHUB_USERNAME>/chatgpt-free-personas/main/assets/banner.png" alt="ChatGPT Free Personas Banner" width="80%" />
+  <img src="https://raw.githubusercontent.com/ahmadsheikhi89/chatgpt-free-personas/main/assets/banner.png" alt="ChatGPT Free Personas Banner" width="80%" />
 </p>
 
 <p align="center">
