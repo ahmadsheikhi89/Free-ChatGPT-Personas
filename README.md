@@ -1,4 +1,4 @@
-# ChatGPT-Free-Personas
+# 🤖 ChatGPT-Free-Personas
 
 Turn **Free ChatGPT** into *your personal expert* – for any role: DevOps, teacher, content creator, student, small business owner, and more.
 
