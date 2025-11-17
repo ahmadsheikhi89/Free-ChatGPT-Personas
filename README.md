@@ -15,19 +15,33 @@ This repo:
 > “Copy → Paste → Replace `<PLACEHOLDER>` → Done.”
 
 ---
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahmadsheikhi89/chatgpt-free-personas/main/assets/banner.png" alt="ChatGPT Free Personas Banner" width="80%" />
+  <img src="https://raw.githubusercontent.com/ahmadsheikhi89/Free-ChatGPT-Personas/main/banner.png"
+       alt="ChatGPT Free Personas Banner"
+       width="80%" />
 </p>
 
 <p align="center">
-  <a href="#-quick-start"><img src="https://img.shields.io/badge/works%20with-ChatGPT%20Free-10b981?style=for-the-badge" alt="Works with ChatGPT Free" /></a>
-  <a href="#-personas-overview"><img src="https://img.shields.io/badge/personas-8%2B%20roles-3b82f6?style=for-the-badge" alt="Personas Count" /></a>
-  <a href="#-how-to-use"><img src="https://img.shields.io/badge/setup-5%20minutes-f59e0b?style=for-the-badge" alt="Setup Time" /></a>
-  <a href="https://github.com/<YOUR_GITHUB_USERNAME>"><img src="https://img.shields.io/badge/made%20by-<YOUR_NAME>-6366f1?style=for-the-badge" alt="Author" /></a>
+  <a href="#-quick-start">
+    <img src="https://img.shields.io/badge/works%20with-ChatGPT%20Free-10b981?style=for-the-badge"
+         alt="Works with ChatGPT Free" />
+  </a>
+  <a href="#-personas-overview">
+    <img src="https://img.shields.io/badge/personas-8%2B%20roles-3b82f6?style=for-the-badge"
+         alt="Personas Count" />
+  </a>
+  <a href="#-how-to-use">
+    <img src="https://img.shields.io/badge/setup-5%20minutes-f59e0b?style=for-the-badge"
+         alt="Setup Time" />
+  </a>
+  <a href="https://github.com/ahmadsheikhi89">
+    <img src="https://img.shields.io/badge/made%20by-Ahmad%20Sheikhi-6366f1?style=for-the-badge"
+         alt="Author" />
+  </a>
 </p>
 
-> Replace `<YOUR_GITHUB_USERNAME>` and `<YOUR_NAME>` with your own values when you publish this repo.
+# ChatGPT-Free-Personas
+
 
 ---
 
