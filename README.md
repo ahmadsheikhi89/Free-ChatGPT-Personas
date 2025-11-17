@@ -1,8 +1,8 @@
 ![Banner](https://raw.githubusercontent.com/ahmadsheikhi89/Free-ChatGPT-Personas/main/banner.png)
 
-# Chatgpt-Free-Personas
+# ChatGPT-Free-Personas
 
-Turn **free ChatGPT** into *your personal expert* – for any role: DevOps, teacher, content creator, student, small business owner, and more.
+Turn **Free ChatGPT** into *your personal expert* – for any role: DevOps, teacher, content creator, student, small business owner, and more.
 
 This repository gives you **ready-to-use templates** for the **Personalization / Custom instructions** page in ChatGPT, designed to work even on the **free tier**.
 
