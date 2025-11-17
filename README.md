@@ -1,5 +1,3 @@
-![Banner](https://raw.githubusercontent.com/ahmadsheikhi89/Free-ChatGPT-Personas/main/banner.png)
-
 # ChatGPT-Free-Personas
 
 Turn **Free ChatGPT** into *your personal expert* – for any role: DevOps, teacher, content creator, student, small business owner, and more.
