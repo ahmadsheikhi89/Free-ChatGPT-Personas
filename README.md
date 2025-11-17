@@ -48,8 +48,6 @@ This repo:
 
 ## 🧭 Table of Contents
 
-## 🧭 Table of Contents
-
 * [What is this?](#-what-is-this)
 * [Who is this for?](#-who-is-this-for)
 * [How to use](#-how-to-use)
