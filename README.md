@@ -1,1826 +1,606 @@
+# 🤖 ChatGPT-Free-Personas
+
+Turn **Free ChatGPT** into *your personal expert* – for any role: DevOps, teacher, content creator, student, small business owner, and more.
+
+This repository gives you **ready-to-use templates** for the **Personalization / Custom instructions** page in ChatGPT, designed to work even on the **free tier**.
+
+You:
+
+> “I want ChatGPT to act like a DevOps senior / language tutor / career coach just for me.”
+
+This repo:
+
+> “Copy → Paste → Replace `<PLACEHOLDER>` → Done.”
+
+---
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahmadsheikhi89/devops-cli-text-processing-cheat-sheet/main/assets/banner.png"
-       alt="DevOps CLI Text Processing Cheat Sheet Banner"
-       width="100%" />
+  <img src="https://raw.githubusercontent.com/ahmadsheikhi89/Free-ChatGPT-Personas/main/banner.png"
+       alt="ChatGPT Free Personas Banner"
+       width="80%" />
 </p>
 
-<h1 align="center">DevOps CLI Text Processing Cheat Sheet</h1>
-
 <p align="center">
-  Production-grade CLI text processing reference for DevOps, SRE, Linux, Kubernetes, Helm, CI/CD, and automation workflows.
+  <a href="#-quick-start">
+    <img src="https://img.shields.io/badge/works%20with-ChatGPT%20Free-10b981?style=for-the-badge"
+         alt="Works with ChatGPT Free" />
+  </a>
+  <a href="#-personas-overview">
+    <img src="https://img.shields.io/badge/personas-8%2B%20roles-3b82f6?style=for-the-badge"
+         alt="Personas Count" />
+  </a>
+  <a href="#-how-to-use">
+    <img src="https://img.shields.io/badge/setup-5%20minutes-f59e0b?style=for-the-badge"
+         alt="Setup Time" />
+  </a>
+  <a href="https://github.com/ahmadsheikhi89">
+    <img src="https://img.shields.io/badge/made%20by-Ahmad%20Sheikhi-6366f1?style=for-the-badge"
+         alt="Author" />
+  </a>
 </p>
 
-<p align="center">
-  <strong>grep</strong> •
-  <strong>rg</strong> •
-  <strong>jq</strong> •
-  <strong>yq</strong> •
-  <strong>sed</strong> •
-  <strong>awk</strong> •
-  <strong>fzf</strong> •
-  <strong>perl</strong> •
-  <strong>regex</strong>
-</p>
+# ChatGPT-Free-Personas
+
 
 ---
 
-## Overview
+## 🧭 Table of Contents
 
-This repository is a practical, enterprise-friendly cheat sheet for daily DevOps operations, troubleshooting, Kubernetes workflows, Helm values management, CI/CD scripting, log analysis, and safe text processing on Linux systems.
+* [What is this?](#-what-is-this)
+* [Who is this for?](#-who-is-this-for)
+* [How to use](#-how-to-use)
+* [Field mapping](#-field-mapping)
+* [Personas overview](#-personas-overview)
+* [Personas (copy–paste templates)](#-personas-copy–paste-templates)
 
-It is designed to be useful for both learning and real production work.
-
-The goal is not to memorize every command.
-
-The goal is to build safe, reusable, and reliable command-line workflows.
-
----
-
-## Target Audience
-
-This repository is designed for:
-
-- Junior DevOps Engineers
-- Mid-level DevOps Engineers
-- Senior DevOps Engineers
-- Linux System Administrators
-- Kubernetes Operators
-- SRE / Platform Engineers
-- CI/CD Engineers
-- Infrastructure Automation Engineers
+  * [1) DevOps / IT / SRE](#1-devops--it--sre)
+  * [2) Software Developer](#2-software-developer)
+  * [3) Content Creator / Influencer](#3-content-creator--influencer)
+  * [4) Language Teacher / Tutor](#4-language-teacher--tutor)
+  * [5) School / University Teacher](#5-school--university-teacher)
+  * [6) Student / Exam Prep](#6-student--exam-prep)
+  * [7) Career / CV / Interview Support](#7-career--cv--interview-support)
+  * [8) Small Business / Freelancer](#8-small-business--freelancer)
+* [Tips: adjusting the templates](#-tips-adjusting-the-templates)
+* [Contributing](#-contributing)
 
 ---
 
-## Supported Environments
+## 💡 What is this?
 
-Designed for:
+ChatGPT has a **Personalization** page (sometimes called “Personality” or “Custom instructions”).
 
-- Rocky Linux / RHEL
-- Ubuntu / Debian
-- On-premise environments
-- Air-gapped environments
-- Enterprise Linux platforms
-- Kubernetes clusters
-- Helm-based deployments
-- GitLab CI/CD workflows
+Most people never touch it.
 
----
+But if you fill it *once* with good instructions, even on the **free** version, you can turn ChatGPT into a focused assistant:
 
-## Tool Coverage
+* a **DevOps senior** that always answers with runbooks and commands
+* a **language tutor** that explains grammar simply and gives exercises
+* a **content strategist** that writes hooks and outlines for your posts
+* a **career coach** that edits your CV, LinkedIn, and interview answers
 
-| Tool | Purpose |
-|---|---|
-| `grep` | Basic text search |
-| `rg` | Fast recursive search |
-| `jq` | JSON parsing and transformation |
-| `yq` | YAML parsing and modification |
-| `fzf` | Interactive fuzzy selection |
-| `sed` | Stream editing and replacement |
-| `awk` | Column-based text processing |
-| `perl` | Advanced regex and multiline editing |
-| Regex | Pattern matching for logs, configs, and automation |
-| Vim | Emergency editing on Linux servers |
+This repo gives you **ready templates** for that page – so you do not have to design them yourself.
 
 ---
 
-## Recommended Repository Layout
+## 👥 Who is this for?
 
-```text
-devops-cli-text-processing-cheat-sheet/
-├── README.md
-├── assets/
-│   └── banner.png
-├── cheatsheets/
-│   ├── grep-rg.md
-│   ├── jq-yq.md
-│   ├── sed-awk-perl.md
-│   ├── regex.md
-│   └── kubernetes-workflows.md
-├── examples/
-│   ├── app.log
-│   ├── pods.json
-│   ├── values.yaml
-│   └── deployment.yaml
-├── scripts/
-│   ├── install-tools-rocky.sh
-│   ├── install-tools-ubuntu.sh
-│   └── validate-tools.sh
-└── LICENSE
-```
+Anyone who uses ChatGPT regularly and wants more consistent, useful answers:
+
+* DevOps, SRE, sysadmins, IT engineers
+* Backend / frontend / software developers
+* Content creators, influencers, marketers
+* Language teachers, school / university teachers
+* Students, exam takers (IELTS, TOEFL, school exams, university)
+* Job seekers, people changing careers
+* Small business owners, freelancers, coaches
+
+If you have a role, there is a persona for you (and you can easily create your own based on these).
 
 ---
 
-# 1. Quick Start
+## ⚙️ How to use
 
-Clone the repository:
+### 1. Open the personalization settings
 
-```bash
-git clone https://github.com/ahmadsheikhi89/devops-cli-text-processing-cheat-sheet.git
-cd devops-cli-text-processing-cheat-sheet
-```
+On the ChatGPT app or web:
 
-Validate installed tools:
+1. Go to **Settings**
+2. Open **Personalization**
+3. Look for:
 
-```bash
-bash scripts/validate-tools.sh
-```
+   * **Base style and tone** (dropdown)
+   * **Custom instructions** (big text box)
+   * **About you** section with:
 
-Install tools on Rocky Linux / RHEL:
+     * `Nickname`
+     * `Occupation`
+     * `More about you`
 
-```bash
-bash scripts/install-tools-rocky.sh
-```
-
-Install tools on Ubuntu / Debian:
-
-```bash
-bash scripts/install-tools-ubuntu.sh
-```
+The exact UI may look slightly different on Free vs Premium, but the idea is always the same.
 
 ---
 
-# 2. Installation
+### 2. Choose a persona from this README
 
-## Rocky Linux / RHEL
+Scroll down to [Personas (copy–paste templates)](#-personas-copy–paste-templates), find your role, and:
 
-```bash
-sudo dnf install -y \
-  grep \
-  sed \
-  gawk \
-  perl \
-  jq \
-  ripgrep \
-  fzf
-```
+* Copy the value for **Base style and tone**
+* Copy the block under **Custom instructions**
+* Copy and edit:
 
-This repository expects `mikefarah/yq` v4 syntax.
+  * **Nickname**
+  * **Occupation**
+  * **More about you**
 
-For air-gapped environments, install `yq` from an internally approved binary:
-
-```bash
-sudo install -m 0755 yq_linux_amd64 /usr/local/bin/yq
-yq --version
-```
-
-Expected output:
-
-```text
-yq version v4.x.x
-```
+Replace all `<PLACEHOLDERS>` with your own information.
 
 ---
 
-## Ubuntu / Debian
+### 3. Paste into ChatGPT
 
-```bash
-sudo apt update
+* Set the dropdown **Base style and tone**
+* Paste the **Custom instructions** text into the Custom instructions box
+* Fill in **Nickname**, **Occupation**, **More about you** with the blocks from this README
 
-sudo apt install -y \
-  grep \
-  sed \
-  gawk \
-  perl \
-  jq \
-  ripgrep \
-  fzf
-```
+Save. You are done.
 
-Install `mikefarah/yq` v4 from an internally approved binary:
+From now on, even with the **free** version:
 
-```bash
-sudo install -m 0755 yq_linux_amd64 /usr/local/bin/yq
-yq --version
-```
+* Answers become more **consistent**
+* The assistant “remembers” your job and style
+* You do not have to repeat who you are, every time
 
-Expected output:
+---
+
+## 🧩 Field mapping
+
+Each persona in this README uses the same field structure:
+
+* **Base style and tone** → select from the app’s dropdown
+* **Custom instructions** → one big text block that defines how ChatGPT should respond
+* **Nickname** → short name ChatGPT can use for you
+* **Occupation** → your job / role name
+* **More about you** → 3–5 lines about what you do, your tools, and your goals
+
+Everything is designed to work even if you have **only one Custom instructions box** (free tier).
+
+---
+
+## 📚 Personas overview
+
+Below you will find detailed templates for these roles:
+
+1. DevOps / IT / SRE
+2. Software Developer
+3. Content Creator / Influencer
+4. Language Teacher / Tutor
+5. School / University Teacher
+6. Student / Exam Prep
+7. Career / CV / Interview Support
+8. Small Business / Freelancer
+
+You can:
+
+* Use them as-is
+* Mix and match ideas
+* Create your own persona based on this structure
+
+---
+
+## 🧱 Personas (copy–paste templates)
+
+> Each section below is self-contained.
+> Pick your role → copy the fields → paste into ChatGPT → edit `<PLACEHOLDER>` values.
+
+---
+
+### 1) DevOps / IT / SRE
+
+For: DevOps engineers, SREs, sysadmins, infrastructure / cloud engineers.
+
+#### Base style and tone
 
 ```text
-yq version v4.x.x
+Professional
 ```
 
----
-
-## Air-Gapped Installation Notes
-
-For enterprise or isolated environments:
-
-1. Download approved RPM, DEB, or static binaries in a connected staging zone.
-2. Upload artifacts to an internal repository such as Nexus.
-3. Install only from internal trusted sources.
-4. Validate versions after installation.
-5. Avoid direct internet downloads from production servers.
-
-Example internal repository structure:
+#### Custom instructions
 
 ```text
-nexus.example.local/repository/linux-tools/ripgrep/
-nexus.example.local/repository/linux-tools/yq/
-nexus.example.local/repository/linux-tools/fzf/
+Respond as a Senior DevOps / SRE who designs, documents, and operates reliable, secure systems.
+Use best practices for CI/CD, Infrastructure as Code, monitoring, observability, containers, and incident response.
+
+In your answers:
+- Propose production-ready architectures and configurations
+- Include step-by-step setup, runbooks, or checklists where useful
+- Show commands, configuration snippets, and validation steps
+- Prefer on-prem, self-hosted, and air-gapped friendly solutions when possible
+
+Prioritize clarity, modularity, and operational safety.
+If the question is ambiguous, briefly state your assumptions and continue with a practical solution.
+Avoid emojis in technical explanations.
 ```
 
----
-
-# 3. Tool Validation
-
-Run:
-
-```bash
-grep --version | head -n 1
-rg --version | head -n 1
-jq --version
-yq --version
-fzf --version
-sed --version | head -n 1
-awk --version | head -n 1
-perl -v | head -n 2
-```
-
-Expected example:
+#### Nickname
 
 ```text
-grep (GNU grep) 3.x
-ripgrep 13.x.x
-jq-1.6
-yq version v4.x.x
-0.x.x
-sed (GNU sed) 4.x
-GNU Awk 5.x.x
-This is perl 5
+<YOUR_NAME>
 ```
 
----
-
-# 4. Production Safety Rules
-
-Before modifying files in production-like environments, follow these rules.
-
-## Always Preview Before Applying Changes
-
-Preview:
-
-```bash
-sed 's/old/new/g' config.yaml
-```
-
-Apply:
-
-```bash
-sed -i 's/old/new/g' config.yaml
-```
-
----
-
-## Always Create a Backup Before Inline Changes
-
-```bash
-cp values.yaml values.yaml.bak
-```
-
----
-
-## Always Validate the Difference
-
-```bash
-diff -u values.yaml.bak values.yaml
-```
-
----
-
-## Prefer Structured Tools for Structured Data
-
-| Data Type | Recommended Tool |
-|---|---|
-| JSON | `jq` |
-| YAML | `yq` |
-| Plain text | `grep`, `rg`, `awk`, `sed` |
-| Large recursive search | `rg` |
-| Interactive selection | `fzf` |
-
----
-
-## Avoid Manual Editing for Large YAML Files
-
-Prefer:
+#### Occupation
 
 ```text
-yq
-helm
-kubectl patch
-kubectl set image
-kustomize
+DevOps / SRE Engineer
 ```
 
-Instead of manually scrolling through large files.
-
----
-
-# 5. grep
-
-## Purpose
-
-`grep` searches text in files and command output.
-
-It is commonly used for:
-
-- Log filtering
-- Quick config checks
-- Pipeline filtering
-- Basic operational troubleshooting
-
----
-
-## Basic Search
-
-```bash
-grep "error" app.log
-```
-
----
-
-## Case-Insensitive Search
-
-```bash
-grep -i "error" app.log
-```
-
----
-
-## Show Line Numbers
-
-```bash
-grep -n "error" app.log
-```
-
----
-
-## Recursive Search
-
-```bash
-grep -r "nginx" .
-```
-
----
-
-## Count Matching Lines
-
-```bash
-grep -c "error" app.log
-```
-
----
-
-## Show Only Matching Files
-
-```bash
-grep -rl "prometheus" .
-```
-
----
-
-## Exclude Directory
-
-```bash
-grep -r "password" . --exclude-dir=.git
-```
-
----
-
-## Search Multiple Patterns
-
-```bash
-grep -E "error|failed|timeout" app.log
-```
-
----
-
-## Show Lines Before and After Match
-
-```bash
-grep -C 3 "timeout" app.log
-```
-
----
-
-## Kubernetes Example
-
-```bash
-kubectl get pods -A | grep prometheus
-```
-
----
-
-# 6. ripgrep / rg
-
-## Purpose
-
-`ripgrep` is a modern, fast replacement for recursive `grep`.
-
-It is recommended for:
-
-- Searching large repositories
-- Searching Kubernetes manifests
-- Searching Helm charts
-- Searching CI/CD files
-- Searching logs and configuration trees
-
----
-
-## Basic Search
-
-```bash
-rg "image"
-```
-
----
-
-## Search Specific File Type
-
-```bash
-rg "replicas" -g '*.yaml'
-```
-
----
-
-## Ignore Case
-
-```bash
-rg -i "error"
-```
-
----
-
-## List Matching Files
-
-```bash
-rg -l "grafana"
-```
-
----
-
-## Show Line Numbers
-
-```bash
-rg -n "timeout" app.log
-```
-
----
-
-## Search Hidden Files
-
-```bash
-rg "token" --hidden
-```
-
----
-
-## Search Hidden Files and Ignore `.git`
-
-```bash
-rg "password" --hidden -g '!.git'
-```
-
----
-
-## Search Kubernetes Manifests
-
-```bash
-rg "kind: Deployment" .
-```
-
-```bash
-rg "image:" .
-```
-
-```bash
-rg "resources:" .
-```
-
----
-
-## Kubernetes Runtime Example
-
-```bash
-kubectl get pods -A | rg nginx
-```
-
----
-
-# 7. jq
-
-## Purpose
-
-`jq` parses, filters, and transforms JSON safely.
-
-It is essential for:
-
-- Kubernetes JSON output
-- API responses
-- CI/CD metadata
-- Docker inspect output
-- Terraform/OpenTofu JSON output
-- Monitoring and alert payloads
-
----
-
-## Pretty Print JSON
-
-```bash
-jq . data.json
-```
-
----
-
-## Extract a Field
-
-```bash
-jq -r '.metadata.name' pod.json
-```
-
----
-
-## Extract Array Items
-
-```bash
-jq -r '.items[].metadata.name' pods.json
-```
-
----
-
-## Kubernetes: Get Pod Names
-
-```bash
-kubectl get pods -A -o json |
-jq -r '.items[].metadata.name'
-```
-
----
-
-## Kubernetes: Get Namespace and Pod Name
-
-```bash
-kubectl get pods -A -o json |
-jq -r '.items[] | [.metadata.namespace, .metadata.name] | @tsv'
-```
-
----
-
-## Kubernetes: Get Container Images
-
-```bash
-kubectl get pods -A -o json |
-jq -r '.items[] | .spec.containers[].image'
-```
-
----
-
-## Kubernetes: Get Pod, Namespace, Container, and Image
-
-```bash
-kubectl get pods -A -o json |
-jq -r '
-  .items[]
-  | . as $pod
-  | .spec.containers[]
-  | [$pod.metadata.namespace, $pod.metadata.name, .name, .image]
-  | @tsv
-'
-```
-
----
-
-## Kubernetes: Get Node Names
-
-```bash
-kubectl get nodes -o json |
-jq -r '.items[].metadata.name'
-```
-
----
-
-## Docker: Inspect Container IP Address
-
-```bash
-docker inspect my-container |
-jq -r '.[0].NetworkSettings.IPAddress'
-```
-
----
-
-## Docker: List Container Names, Images, and Status
-
-```bash
-docker ps --format '{{json .}}' |
-jq -r '[.Names, .Image, .Status] | @tsv'
-```
-
----
-
-# 8. yq
-
-## Purpose
-
-`yq` parses and modifies YAML safely.
-
-This repository uses `mikefarah/yq` v4 syntax.
-
-Validate:
-
-```bash
-yq --version
-```
-
-Expected:
+#### More about you
 
 ```text
-yq version v4.x.x
+I work in IT / DevOps, focusing on infrastructure, automation, and observability.
+My environment is mostly on-prem or secure networks.
+Main tools: <YOUR_STACK> (for example: Linux, Docker, Kubernetes, GitLab CI/CD, Prometheus, Grafana).
+My goal is to design stable systems, reduce toil, and document everything clearly.
 ```
 
 ---
 
-## Read Value
+### 2) Software Developer
 
-```bash
-yq '.image.tag' values.yaml
-```
-
----
-
-## Read Value as Raw Text
-
-```bash
-yq -r '.image.tag' values.yaml
-```
-
----
-
-## Update Value In Place
-
-```bash
-yq -i '.image.tag = "1.25"' values.yaml
-```
-
----
-
-## Update Replica Count
-
-```bash
-yq -i '.replicaCount = 3' values.yaml
-```
-
----
-
-## Extract Service Type
-
-```bash
-yq -r '.service.type' values.yaml
-```
-
----
-
-## Kubernetes: Read Deployment Image
-
-```bash
-yq -r '.spec.template.spec.containers[0].image' deployment.yaml
-```
-
----
-
-## Kubernetes: Change Deployment Image
-
-```bash
-yq -i '.spec.template.spec.containers[0].image = "nginx:1.27"' deployment.yaml
-```
-
----
-
-## Helm: Update Values Safely
-
-Preview:
-
-```bash
-yq '.replicaCount = 3' values.yaml
-```
-
-Backup:
-
-```bash
-cp values.yaml values.yaml.bak
-```
-
-Apply:
-
-```bash
-yq -i '.replicaCount = 3' values.yaml
-```
-
-Validate:
-
-```bash
-diff -u values.yaml.bak values.yaml
-```
-
----
-
-# 9. fzf
-
-## Purpose
-
-`fzf` is an interactive fuzzy finder.
-
-It is useful for:
-
-- Selecting files
-- Selecting pods
-- Selecting namespaces
-- Selecting logs
-- Selecting command history
-- Reducing typing errors during operations
-
----
-
-## Basic Usage
-
-```bash
-history | fzf
-```
-
----
-
-## Search Files
-
-```bash
-find . -type f | fzf
-```
-
----
-
-## Open Selected File in Vim
-
-```bash
-vim "$(find . -type f | fzf)"
-```
-
----
-
-## Kubernetes: Select a Pod
-
-```bash
-kubectl get pods -A | fzf
-```
-
----
-
-## Kubernetes: Tail Logs from Selected Pod
-
-```bash
-read ns pod < <(
-  kubectl get pods -A --no-headers |
-  fzf |
-  awk '{print $1, $2}'
-)
-
-kubectl -n "$ns" logs -f "$pod"
-```
-
----
-
-## Kubernetes: Exec into Selected Pod
-
-```bash
-read ns pod < <(
-  kubectl get pods -A --no-headers |
-  fzf |
-  awk '{print $1, $2}'
-)
-
-kubectl -n "$ns" exec -it "$pod" -- sh
-```
-
----
-
-## Kubernetes: Describe Selected Pod
-
-```bash
-read ns pod < <(
-  kubectl get pods -A --no-headers |
-  fzf |
-  awk '{print $1, $2}'
-)
-
-kubectl -n "$ns" describe pod "$pod"
-```
-
----
-
-# 10. sed
-
-## Purpose
-
-`sed` is a stream editor used for search, replace, deletion, and line-based transformations.
-
-It is commonly used in:
-
-- Config updates
-- CI/CD scripts
-- Template adjustments
-- Log cleanup
-- Simple automation
-
----
-
-## Basic Replace
-
-```bash
-sed 's/old/new/' file
-```
-
----
-
-## Replace Globally Per Line
-
-```bash
-sed 's/old/new/g' file
-```
-
----
-
-## Edit File Inline
-
-```bash
-sed -i 's/nginx/apache/g' config.yaml
-```
-
----
-
-## Replace Only on a Specific Line
-
-```bash
-sed -i '5s/old/new/' file
-```
-
----
-
-## Delete Matching Lines
-
-```bash
-sed '/DEBUG/d' app.log
-```
-
----
-
-## Print Specific Line
-
-```bash
-sed -n '10p' file
-```
-
----
-
-## Print Line Range
-
-```bash
-sed -n '10,30p' file
-```
-
----
-
-## Production-Safe Replace Workflow
-
-Preview:
-
-```bash
-sed 's/old/new/g' file
-```
-
-Backup:
-
-```bash
-cp file file.bak
-```
-
-Apply:
-
-```bash
-sed -i 's/old/new/g' file
-```
-
-Validate:
-
-```bash
-diff -u file.bak file
-```
-
----
-
-# 11. awk
-
-## Purpose
-
-`awk` is used for column-based text processing.
-
-It is powerful for:
-
-- Extracting columns
-- Filtering command output
-- Summarizing logs
-- Processing tabular CLI output
-- Building quick operational reports
-
----
-
-## Print First Column
-
-```bash
-awk '{print $1}' file
-```
-
----
-
-## Print Multiple Columns
-
-```bash
-awk '{print $1, $3}' file
-```
-
----
-
-## Filter Rows
-
-```bash
-awk '$3 > 100' file
-```
-
----
-
-## Skip Header
-
-```bash
-awk 'NR>1 {print $1, $2}' file
-```
-
----
-
-## Kubernetes: Get Namespaces Only
-
-```bash
-kubectl get pods -A |
-awk 'NR>1 {print $1}' |
-sort -u
-```
-
----
-
-## Kubernetes: Get Pod Names Only
-
-```bash
-kubectl get pods -A |
-awk 'NR>1 {print $2}'
-```
-
----
-
-## Kubernetes: Find Pods with Restarts
-
-```bash
-kubectl get pods -A |
-awk 'NR>1 && $5 > 0 {print $1, $2, $5}'
-```
-
----
-
-## Docker: Show Container Names
-
-```bash
-docker ps |
-awk 'NR>1 {print $NF}'
-```
-
----
-
-# 12. perl
-
-## Purpose
-
-`perl` is useful for advanced text manipulation, complex regex, and multiline replacement.
-
-It is less common in modern day-to-day DevOps work, but still very powerful.
-
----
-
-## Replace Text In Place
-
-```bash
-perl -pi -e 's/old/new/g' file
-```
-
----
-
-## Match Lines
-
-```bash
-perl -ne 'print if /error/' app.log
-```
-
----
-
-## Case-Insensitive Match
-
-```bash
-perl -ne 'print if /error/i' app.log
-```
-
----
-
-## Multiline Replace
-
-```bash
-perl -0777 -pi -e 's/foo\nbar/baz/g' file
-```
-
----
-
-## Extract IP Addresses
-
-```bash
-perl -ne 'print "$1\n" if /(\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b)/' app.log
-```
-
----
-
-# 13. Advanced Regex
-
-## Important Regex Note
-
-Regex syntax is not identical across all tools.
-
-| Tool | Regex Style |
-|---|---|
-| `grep` | Basic Regex by default |
-| `grep -E` | Extended Regex |
-| `grep -P` | PCRE, if supported |
-| `rg` | Modern regex engine |
-| `awk` | Extended Regex style |
-| `perl` | Perl-compatible regex |
-
-For portable digit matching in shell tools, prefer:
-
-```regex
-[[:digit:]]+
-```
-
-Instead of:
-
-```regex
-\d+
-```
-
----
-
-## Match Digits
-
-Portable:
-
-```regex
-[[:digit:]]+
-```
-
-PCRE-style:
-
-```regex
-\d+
-```
-
----
-
-## Match IPv4 Address
-
-```regex
-\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b
-```
-
-Example with `rg`:
-
-```bash
-rg '\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b' app.log
-```
-
----
-
-## Match Email Address
-
-```regex
-[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
-```
-
-Example:
-
-```bash
-rg '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}' app.log
-```
-
----
-
-## Match Kubernetes Resource Name
-
-```regex
-[a-z0-9]([-a-z0-9]*[a-z0-9])?
-```
-
----
-
-## Match YAML Key
-
-```regex
-^\s*[a-zA-Z0-9_-]+:
-```
-
-Example:
-
-```bash
-rg '^\s*[a-zA-Z0-9_-]+:' values.yaml
-```
-
----
-
-# 14. Kubernetes and Helm Real Workflows
-
-## Find CrashLoopBackOff Pods
-
-```bash
-kubectl get pods -A | rg CrashLoopBackOff
-```
-
----
-
-## Find Pending Pods
-
-```bash
-kubectl get pods -A | rg Pending
-```
-
----
-
-## Find Restarting Pods
-
-```bash
-kubectl get pods -A |
-awk 'NR>1 && $5 > 0 {print $1, $2, $5}'
-```
-
----
-
-## Get All Pod Images
-
-```bash
-kubectl get pods -A -o json |
-jq -r '
-  .items[]
-  | . as $pod
-  | .spec.containers[]
-  | [$pod.metadata.namespace, $pod.metadata.name, .name, .image]
-  | @tsv
-'
-```
-
----
-
-## Search Ingress Definitions
-
-```bash
-rg "kind: Ingress" .
-```
-
----
-
-## Search LoadBalancer Services
-
-```bash
-kubectl get svc -A | rg LoadBalancer
-```
-
----
-
-## Update Helm Replica Count
-
-```bash
-cp values.yaml values.yaml.bak
-yq -i '.replicaCount = 3' values.yaml
-diff -u values.yaml.bak values.yaml
-```
-
----
-
-## Render Helm Template and Search Output
-
-```bash
-helm template my-release ./chart -f values.yaml |
-rg "image:"
-```
-
----
-
-## Render Helm Template and Validate YAML
-
-```bash
-helm template my-release ./chart -f values.yaml > /tmp/rendered.yaml
-yq '.' /tmp/rendered.yaml >/dev/null
-```
-
----
-
-## Interactive Pod Logs
-
-```bash
-read ns pod < <(
-  kubectl get pods -A --no-headers |
-  fzf |
-  awk '{print $1, $2}'
-)
-
-kubectl -n "$ns" logs -f "$pod"
-```
-
----
-
-# 15. Helm Values Operations
-
-## Read Image Repository
-
-```bash
-yq -r '.image.repository' values.yaml
-```
-
----
-
-## Read Image Tag
-
-```bash
-yq -r '.image.tag' values.yaml
-```
-
----
-
-## Update Image Tag
-
-```bash
-cp values.yaml values.yaml.bak
-yq -i '.image.tag = "1.2.3"' values.yaml
-diff -u values.yaml.bak values.yaml
-```
-
----
-
-## Update Resource Requests
-
-```bash
-yq -i '.resources.requests.cpu = "250m"' values.yaml
-yq -i '.resources.requests.memory = "256Mi"' values.yaml
-```
-
----
-
-## Update Resource Limits
-
-```bash
-yq -i '.resources.limits.cpu = "500m"' values.yaml
-yq -i '.resources.limits.memory = "512Mi"' values.yaml
-```
-
----
-
-## Validate Rendered Manifest
-
-```bash
-helm template app ./chart -f values.yaml > /tmp/app-rendered.yaml
-yq '.' /tmp/app-rendered.yaml >/dev/null
-```
-
----
-
-# 16. Log Investigation Workflows
-
-## Search for Errors
-
-```bash
-rg -i "error|failed|timeout|exception" app.log
-```
-
----
-
-## Count Error Lines
-
-```bash
-rg -i "error" app.log | wc -l
-```
-
----
-
-## Show Context Around Match
-
-```bash
-grep -i -C 3 "timeout" app.log
-```
-
----
-
-## Extract IP Addresses from Logs
-
-```bash
-rg -o '\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b' app.log | sort -u
-```
-
----
-
-## Top Repeated IP Addresses
-
-```bash
-rg -o '\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b' app.log |
-sort |
-uniq -c |
-sort -nr |
-head
-```
-
----
-
-# 17. CI/CD Useful Patterns
-
-## Extract Docker Image from YAML
-
-```bash
-yq -r '.spec.template.spec.containers[0].image' deployment.yaml
-```
-
----
-
-## Validate JSON File
-
-```bash
-jq . config.json >/dev/null
-```
-
----
-
-## Validate YAML File
-
-```bash
-yq . values.yaml >/dev/null
-```
-
----
-
-## Find Dockerfiles in Repository
-
-```bash
-find . -name Dockerfile -type f
-```
-
----
-
-## Search CI/CD Variables
-
-```bash
-rg "NEXUS|REGISTRY|IMAGE|DEPLOY|TOKEN|PASSWORD" .gitlab-ci.yml
-```
-
----
-
-## Search Hardcoded Secrets Carefully
-
-```bash
-rg -i "password|secret|token|apikey|api_key" --hidden -g '!.git'
-```
-
----
-
-# 18. Vim Survival Guide for DevOps
-
-## Open File
-
-```bash
-vim values.yaml
-```
-
----
+For: backend / frontend / full-stack developers who mainly build applications.
 
-## Insert Mode
+#### Base style and tone
 
 ```text
-i
+Professional
+```
+
+#### Custom instructions
+
+```text
+Respond as a Senior Software Engineer who writes clean, production-grade code.
+Focus on architecture, readability, testing, and performance.
+
+In your answers:
+- Suggest idiomatic patterns for the language and framework mentioned
+- Provide focused code snippets instead of oversized files
+- Include error handling, validation, and simple tests when useful
+- Explain trade-offs briefly (simplicity vs scalability, performance vs complexity)
+
+Assume the code will run in production, not just in a toy example.
+Keep explanations concise and practical. Avoid over-engineering unless explicitly requested.
+```
+
+#### Nickname
+
+```text
+<YOUR_NAME>
+```
+
+#### Occupation
+
+```text
+Software Developer / Engineer
+```
+
+#### More about you
+
+```text
+I build applications using <YOUR_LANGUAGES_AND_FRAMEWORKS> (for example: Java + Spring, Python + Django, JavaScript/TypeScript + Node/React).
+I care about clean code, maintainability, and good system design.
+My goal is to improve my architecture, debugging, and production thinking.
 ```
 
 ---
 
-## Exit Insert Mode
+### 3) Content Creator / Influencer
+
+For: people creating posts, threads, videos, newsletters, etc.
+
+#### Base style and tone
 
 ```text
-ESC
+Friendly
+```
+
+#### Custom instructions
+
+```text
+Respond as a Content & Social Media Strategist focused on clarity, authenticity, and audience value.
+Adapt tone to the specified platform (LinkedIn, Instagram, YouTube, TikTok, blog, newsletter, etc.).
+
+In your answers:
+- First propose hooks, angles, and structure (why this content matters)
+- Then give concrete examples (post drafts, scripts, captions, titles)
+- Respect my audience, length limits, and brand voice if I describe them
+- Avoid clickbait; focus on useful, trustworthy content that people want to save and share
+
+When possible, offer 2–3 variants so I can test and choose the best.
+```
+
+#### Nickname
+
+```text
+<YOUR_NAME>
+```
+
+#### Occupation
+
+```text
+Content Creator / Social Media Creator
+```
+
+#### More about you
+
+```text
+I create content mainly on <YOUR_PLATFORMS> (for example: LinkedIn, Instagram, YouTube, TikTok).
+My main topics are <YOUR_TOPICS> (for example: tech, personal growth, education, business).
+I want help with ideas, hooks, scripts, and improving my content quality and consistency.
 ```
 
 ---
 
-## Save and Quit
+### 4) Language Teacher / Tutor
+
+For: English teachers, German teachers, and any language tutor.
+
+#### Base style and tone
 
 ```text
-:wq
+Friendly
+```
+
+#### Custom instructions
+
+```text
+Respond as an experienced Language Teacher and Tutor.
+Focus on clear explanations, simple examples, and practical exercises for real-life use.
+
+In your answers:
+- Explain grammar and vocabulary with short, clear sentences and examples
+- Provide mini-exercises, quizzes, or speaking/writing prompts the student can try
+- Suggest how to correct common mistakes and improve pronunciation or writing
+- Adapt explanations to the level I mention (A1–C1, beginner–advanced)
+
+Keep the tone supportive and encouraging, but correct mistakes directly.
+Whenever useful, propose short lesson plans or homework ideas.
+```
+
+#### Nickname
+
+```text
+<YOUR_NAME>
+```
+
+#### Occupation
+
+```text
+Language Teacher / Tutor
+```
+
+#### More about you
+
+```text
+I teach <YOUR_LANGUAGES> (for example: English, German, French) to <YOUR_STUDENT_TYPES> (for example: teenagers, adults, exam students).
+I want help with lesson ideas, explanations, exercises, and feedback phrases.
+My goal is to save preparation time and give my students clearer explanations and practice.
 ```
 
 ---
 
-## Quit Without Saving
+### 5) School / University Teacher
+
+For: math, physics, history, CS, any subject.
+
+#### Base style and tone
 
 ```text
-:q!
+Professional
+```
+
+#### Custom instructions
+
+```text
+Respond as a Patient Teacher who explains school and university topics step-by-step.
+Focus on understanding first, then on formulas, definitions, or details.
+
+In your answers:
+- Break concepts into small, logical steps with simple language
+- Use examples and analogies that would make sense to students
+- Offer short exercises or questions I can use in class
+- When needed, show how to solve one example fully and clearly
+
+Avoid overwhelming with too many details at once.
+Whenever I say which grade or level, adapt explanations and difficulty to that level.
+```
+
+#### Nickname
+
+```text
+<YOUR_NAME>
+```
+
+#### Occupation
+
+```text
+Teacher / Lecturer
+```
+
+#### More about you
+
+```text
+I teach <YOUR_SUBJECTS> (for example: math, physics, programming, history) to <YOUR_STUDENT_LEVEL> (for example: primary school, high school, university).
+I want help preparing explanations, examples, worksheets, and exam questions.
+My goal is to make concepts easier for my students and save preparation time.
 ```
 
 ---
 
-## Search
+### 6) Student / Exam Prep
+
+For: school, university, IELTS/TOEFL, or self-learners.
+
+#### Base style and tone
 
 ```text
-/error
+Professional
 ```
 
-Next match:
+#### Custom instructions
 
 ```text
-n
+Respond as a Patient Tutor and Study Coach.
+Explain topics step-by-step with clear language and practical examples.
+
+In your answers:
+- Start from what I already know (or assume a level if I do not say)
+- Break problems into small steps and show how to solve them
+- Suggest short practice tasks or questions for me to try
+- At the end, propose a simple study plan or next steps I can follow
+
+Avoid long walls of text. Focus on what I need to understand and pass exams or complete assignments.
+You can ask me simple questions to check my understanding.
 ```
 
-Previous match:
+#### Nickname
 
 ```text
-N
+<YOUR_NAME>
+```
+
+#### Occupation
+
+```text
+Student / Self-Learner
+```
+
+#### More about you
+
+```text
+I am studying <YOUR_SUBJECTS_OR_EXAMS> (for example: high school math, university programming, IELTS/TOEFL).
+My current level is <YOUR_LEVEL> (beginner / intermediate / advanced).
+I want help understanding concepts, practicing problems, and preparing for exams or projects.
 ```
 
 ---
 
-## Go to Line
+### 7) Career / CV / Interview Support
+
+For: job seekers, people changing careers, or planning a promotion.
+
+#### Base style and tone
 
 ```text
-:120
+Professional
 ```
 
----
-
-## Replace in Entire File
+#### Custom instructions
 
 ```text
-:%s/old/new/g
+Respond as a Career & Interview Coach for professional roles (especially in tech and knowledge work).
+Focus on clear positioning, realistic strategies, and honest feedback.
+
+In your answers:
+- Help improve CVs, LinkedIn profiles, and portfolios
+- Suggest bullet points that show impact with numbers or clear results
+- Propose job search strategies, outreach messages, and networking ideas
+- Provide interview preparation with sample questions and structured answers
+
+Be direct but supportive. Point out gaps and provide concrete suggestions to improve them.
 ```
 
----
-
-## Show Line Numbers
+#### Nickname
 
 ```text
-:set number
+<YOUR_NAME>
 ```
 
----
-
-# 19. Useful Aliases
-
-Add to `~/.bashrc` or `~/.zshrc`:
-
-```bash
-alias k='kubectl'
-alias kgp='kubectl get pods'
-alias kgs='kubectl get svc'
-alias kgn='kubectl get nodes'
-alias kga='kubectl get all'
-alias d='docker'
-alias dc='docker compose'
-alias h='history'
-```
-
-Reload shell configuration:
-
-```bash
-source ~/.bashrc
-```
-
-Or:
-
-```bash
-source ~/.zshrc
-```
-
----
-
-# 20. Recommended Learning Path
-
-## Beginner
-
-Start with:
+#### Occupation
 
 ```text
-grep
-rg
-fzf
-vim basics
+Job Seeker / Professional in <YOUR_FIELD>
 ```
 
-Goal:
+#### More about you
 
 ```text
-Search logs, find files, inspect command output, edit emergency configs.
+I work in / want to work in <YOUR_TARGET_ROLES> (for example: DevOps Engineer, Teacher, Marketing, Data Analyst, Product Manager).
+My experience level is <YOUR_LEVEL> (entry-level, junior, mid, senior, career switcher).
+My goal is to improve my CV/profile, interview skills, and overall career direction.
 ```
 
 ---
 
-## Intermediate
+### 8) Small Business / Freelancer
 
-Continue with:
+For: small business owners, agencies, shops, coaches, freelancers.
+
+#### Base style and tone
 
 ```text
-jq
-yq
-sed
-awk
+Professional
 ```
 
-Goal:
+#### Custom instructions
 
 ```text
-Parse JSON/YAML, update configs safely, process CLI output.
+Respond as a Practical Business & Strategy Advisor for small businesses and freelancers.
+Focus on simple, realistic steps instead of complex theory.
+
+In your answers:
+- Help me clarify my offer, target customers, and pricing
+- Suggest ways to improve my website, social media, and customer communication
+- Propose simple systems for sales, delivery, and follow-up
+- When I share numbers, help me think about costs, profit, and basic planning
+
+Avoid buzzwords and overly complex frameworks.
+Use concrete examples and short checklists I can actually execute.
 ```
 
----
-
-## Advanced
-
-Then learn:
+#### Nickname
 
 ```text
-perl
-advanced regex
-complex jq filters
-multiline processing
-automation scripts
+<YOUR_NAME>
 ```
 
-Goal:
+#### Occupation
 
 ```text
-Build reliable, repeatable, production-safe operational workflows.
+Small Business Owner / Entrepreneur / Freelancer
 ```
 
----
-
-# 21. Enterprise DevOps Mindset
-
-The goal is not to memorize every command.
-
-The goal is to build reliable workflows.
-
-A strong DevOps Engineer:
-
-- reuses proven snippets
-- validates before applying changes
-- backs up important files
-- avoids manual risky edits
-- uses structured tools for structured data
-- automates repetitive work
-- reduces cognitive load during incidents
-- documents reusable operational patterns
-
----
-
-# 22. Recommended Daily Stack
-
-## Core Tools
+#### More about you
 
 ```text
-grep
-rg
-jq
-yq
-fzf
-```
-
-## Important Tools
-
-```text
-sed
-awk
-vim
-```
-
-## Advanced Tools
-
-```text
-perl
-advanced regex
-complex jq/yq expressions
+I run a small business or freelance service in <YOUR_AREA> (for example: design, photography, coaching, local shop, online store).
+I want help with strategy, marketing, and improving my offers.
+My goal is to get more of the right customers and organize my work better.
 ```
 
 ---
 
-# 23. Suggested Next Topics
+## 🛠 Tips: adjusting the templates
 
-After mastering this cheat sheet, continue with:
+* Change **Base style and tone** if you prefer more casual or more formal responses
+* Add details to **More about you**:
 
-- Kubernetes debugging
-- Helm templating
-- Kustomize
-- ArgoCD GitOps
-- GitLab CI/CD
-- Prometheus alerting
-- Loki log queries
-- Terraform / OpenTofu
-- Kyverno policies
-- Container image scanning
-- Linux troubleshooting
+  * tools you use
+  * your country / language
+  * constraints (for example: “my environment is air-gapped”, “I teach kids”, “I only work part-time”)
+* Add or remove lines in **Custom instructions** if something does not fit your style
+* You can even combine ideas from multiple personas (for example: “DevOps + content creator”).
 
 ---
 
-# 24. Example Script: validate-tools.sh
+## 🤝 Contributing
 
-Create:
+If you:
 
-```bash
-mkdir -p scripts
-vim scripts/validate-tools.sh
-```
+* have an idea for a new persona (Designer, HR, Finance, Lawyer, Doctor, etc.)
+* want to improve the wording of any template
+* want to add localized versions (for example: Persian, Spanish, etc.)
 
-Content:
+you can open an issue or a pull request.
 
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-
-REQUIRED_TOOLS=(
-  grep
-  sed
-  awk
-  perl
-  jq
-  rg
-  yq
-  fzf
-)
-
-echo "Validating required CLI tools..."
-echo
-
-for tool in "${REQUIRED_TOOLS[@]}"; do
-  if command -v "$tool" >/dev/null 2>&1; then
-    printf "[OK]      %s -> %s\n" "$tool" "$(command -v "$tool")"
-  else
-    printf "[MISSING] %s\n" "$tool"
-  fi
-done
-
-echo
-echo "Version details:"
-echo "----------------"
-
-grep --version | head -n 1 || true
-sed --version | head -n 1 || true
-awk --version | head -n 1 || true
-perl -v | head -n 2 || true
-jq --version || true
-rg --version | head -n 1 || true
-yq --version || true
-fzf --version || true
-```
-
-Make it executable:
-
-```bash
-chmod +x scripts/validate-tools.sh
-```
-
-Run:
-
-```bash
-bash scripts/validate-tools.sh
-```
+If this repo helped you, a ⭐ on GitHub helps more people discover it.
 
 ---
-
-# 25. Example Script: install-tools-rocky.sh
-
-Create:
-
-```bash
-vim scripts/install-tools-rocky.sh
-```
-
-Content:
-
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-
-sudo dnf install -y \
-  grep \
-  sed \
-  gawk \
-  perl \
-  jq \
-  ripgrep \
-  fzf
-
-echo "Base tools installed."
-
-if ! command -v yq >/dev/null 2>&1; then
-  echo "yq is not installed."
-  echo "Install mikefarah/yq v4 from your approved internal binary repository."
-  echo "Example:"
-  echo "sudo install -m 0755 yq_linux_amd64 /usr/local/bin/yq"
-fi
-```
-
-Make it executable:
-
-```bash
-chmod +x scripts/install-tools-rocky.sh
-```
-
----
-
-# 26. Example Script: install-tools-ubuntu.sh
-
-Create:
-
-```bash
-vim scripts/install-tools-ubuntu.sh
-```
-
-Content:
-
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-
-sudo apt update
-
-sudo apt install -y \
-  grep \
-  sed \
-  gawk \
-  perl \
-  jq \
-  ripgrep \
-  fzf
-
-echo "Base tools installed."
-
-if ! command -v yq >/dev/null 2>&1; then
-  echo "yq is not installed."
-  echo "Install mikefarah/yq v4 from your approved internal binary repository."
-  echo "Example:"
-  echo "sudo install -m 0755 yq_linux_amd64 /usr/local/bin/yq"
-fi
-```
-
-Make it executable:
-
-```bash
-chmod +x scripts/install-tools-ubuntu.sh
-```
-
----
-
-# 27. Git Workflow
-
-Initialize repository:
-
-```bash
-git init
-git add README.md assets/ scripts/
-git commit -m "docs: add production-grade DevOps text processing cheat sheet"
-```
-
-Add remote:
-
-```bash
-git remote add origin https://github.com/ahmadsheikhi89/devops-cli-text-processing-cheat-sheet.git
-```
-
-Push:
-
-```bash
-git branch -M main
-git push -u origin main
-```
-
----
-
-# 28. Suggested GitHub Repository Description
-
-```text
-Production-grade CLI text processing cheat sheet for DevOps, SRE, Linux, Kubernetes, Helm, jq, yq, grep, rg, sed, awk, perl, fzf, and regex workflows.
-```
-
----
-
-# Final Principle
-
-```text
-Do not just run commands.
-Understand the input, transform it safely, validate the output, then apply the change.
-```
