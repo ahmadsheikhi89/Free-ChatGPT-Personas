@@ -1,18 +1,3 @@
-# 🤖 ChatGPT-Free-Personas
-
-Turn **Free ChatGPT** into *your personal expert* – for any role: DevOps, teacher, content creator, student, small business owner, and more.
-
-This repository gives you **ready-to-use templates** for the **Personalization / Custom instructions** page in ChatGPT, designed to work even on the **free tier**.
-
-You:
-
-> “I want ChatGPT to act like a DevOps senior / language tutor / career coach just for me.”
-
-This repo:
-
-> “Copy → Paste → Replace `<PLACEHOLDER>` → Done.”
-
----
 <p align="center">
   <img src="https://raw.githubusercontent.com/ahmadsheikhi89/Free-ChatGPT-Personas/main/banner.png"
        alt="ChatGPT Free Personas Banner"
@@ -20,7 +5,7 @@ This repo:
 </p>
 
 <p align="center">
-  <a href="#-quick-start">
+  <a href="#-how-to-use">
     <img src="https://img.shields.io/badge/works%20with-ChatGPT%20Free-10b981?style=for-the-badge"
          alt="Works with ChatGPT Free" />
   </a>
@@ -38,8 +23,26 @@ This repo:
   </a>
 </p>
 
-# ChatGPT-Free-Personas
+<h1 align="center">🤖 ChatGPT-Free-Personas</h1>
 
+<p align="center">
+  Turn <strong>Free ChatGPT</strong> into <em>your personal expert</em> – for any role:
+  DevOps, teacher, content creator, student, small business owner, and more.
+</p>
+
+---
+
+This repository gives you **ready-to-use templates** for the
+**Personalization / Custom instructions** page in ChatGPT, designed to work
+even on the **free tier**.
+
+You:
+
+> “I want ChatGPT to act like a DevOps senior / language tutor / career coach just for me.”
+
+This repo:
+
+> “Copy → Paste → Replace `<PLACEHOLDER>` → Done.”
 
 ---
 
